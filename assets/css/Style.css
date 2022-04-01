@@ -91,6 +91,7 @@ body{
     margin: 30px 10px;
 }
 .form{
+    animation: form 0.5s ease-in-out;
     background: linear-gradient(90deg, rgba(63,171,111,0.8855917366946778) 0%, rgba(255, 255, 255, 0.498) 0%);
     border-radius: 5px;
     box-shadow: 11px 8px 15px 5px rgba(0,0,0,0.21);
@@ -109,7 +110,7 @@ body{
     font-size: 16px;
     width: 300px;
     display: block;
-    border: 1px solid #3a7455;
+    border: 1px solid #549472;
     border-radius: 4px;
     background-color: transparent;
     outline: none;
@@ -133,10 +134,12 @@ body{
     background-color: #2ab86a;
 }
 .middle{
+    animation: mid 0.4s ease-in-out;
     width:1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .middle > h1{
     margin: 100px auto 10px auto;
@@ -199,7 +202,16 @@ body{
     box-shadow: 11px 8px 15px 5px rgba(0,0,0,0.21);
 }
 
-
+@keyframes mid{
+    0%{
+        opacity: 0;
+        transform: translateY(40px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
 @keyframes header{
     0% {
         opacity: 0;
@@ -236,7 +248,17 @@ body{
     }
 }
 
+@keyframes form{
+    0% {
+        opacity: 0;
+        transform: translateX(-50px)
+    }
 
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
 
 
 
