@@ -99,6 +99,7 @@ body{
     padding: 30px;
     height: 300px;
 }
+
 .form > form > label{
     font-family: 'Sarabun',sans-serif;
     color: black;
@@ -119,19 +120,24 @@ body{
     padding: 4px;
 }
 .form > form > button{
+    font-weight: bold;
+    color: #F4F4F4;
     font-family: 'Sarabun', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     width: 300px;
     height: 50px;
     margin-top: 20px;
     border-radius: 30px;
     border: none;
-    background-color: #165b35;
+    background: linear-gradient(90deg, rgb(5, 67, 66) 57%, rgb(8, 96, 56) 80%);
+    opacity: 80%;
     cursor: pointer;
     box-shadow: 11px 8px 15px 5px rgba(0,0,0,0.21);
+    transition:ease-in-out 0.5s;
 }
 .form > form > button:hover{
-    background-color: #2ab86a;
+    transition:ease-out 0.5s;
+    opacity: 100%;
 }
 .middle{
     animation: mid 0.4s ease-in-out;
@@ -200,6 +206,7 @@ body{
     font-size:20px;
     font-family: Nunito Sans, sans-serif;
     box-shadow: 11px 8px 15px 5px rgba(0,0,0,0.21);
+    animation: modal 0.3s ease-in-out;
 }
 
 @keyframes mid{
@@ -210,6 +217,14 @@ body{
     100%{
         opacity: 1;
         transform: translateY(0px)
+    }
+}
+@keyframes modal{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 @keyframes header{
