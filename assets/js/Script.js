@@ -5,8 +5,12 @@ function salvarNovoEvento(event){
     
     
     let modal = document.getElementById('modal')
-    modal.innerText = "Solicitação enviada com sucesso, obrigado por entrar em contato"
+    modal.innerHTML = "Solicitação enviada com sucesso, obrigado por entrar em contato... <br> <small>Você será redirecionado</small> "
     modal.classList.add('modal-active')
+    setTimeout(()=> {
+        window.location.href ="index.html"
+
+    },4000)
 }
 form.addEventListener('submit', salvarNovoEvento)
 
