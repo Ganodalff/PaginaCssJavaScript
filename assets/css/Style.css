@@ -119,6 +119,22 @@ body{
     margin-top: 5px;
     padding: 4px;
 }
+.form > form > input:hover{
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    display: block;
+    border: 1px solid #549472;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 4px;
+    background-color: #f4f4f4;
+    transition:ease-in-out 0.2s;
+}
 .form > form > button{
     font-weight: bold;
     color: #F4F4F4;
