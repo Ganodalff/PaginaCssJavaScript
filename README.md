@@ -2,7 +2,4 @@
 
 * css, 
 * javascript, 
-* git,
-* docker, 
-* php,
-* mysql,
+
